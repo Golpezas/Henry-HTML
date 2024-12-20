@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <style>
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Formulario de contacto</h1>
+    </header>
+
+    <main>
+
+        <div>
+
+            <h2>Formulario para que puedas contactarnos</h2>
+
+            <p>Por favor llena los campos requeridos</p>
+
+            <form action="enviar.php" method="post">
+
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
+                </div>
+
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" required></textarea>
+                </div>
+
+                <input type="submit" value="Enviar">
+            
+            </form>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
